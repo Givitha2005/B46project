@@ -1,0 +1,105 @@
+<html>
+
+<head>
+    <title>grid</title>
+    <h1>Grid Layout</h1>
+    <style>
+        .wrapper {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 10px;
+            grid-auto-rows: minmax(100px,auto);          
+        }
+        .one{
+            border:1px solid black;
+            background-color: whitesmoke;
+            grid-column: 1;
+            grid-row:1
+        }
+         .two{
+            border:1px solid black;
+            background-color:dodgerblue;
+            grid-column: 2;
+            grid-row:1
+        }
+        .three{
+            border:1px solid black;
+            background-color: whitesmoke;
+            grid-column: 3;
+            grid-row:1
+        }
+        .four{
+            border:1px solid black;
+            background-color:dodgerblue;
+            grid-column: 1;
+            grid-row:2
+        } 
+        .five{
+            border:1px solid black;
+            background-color:whitesmoke;
+            grid-column: 2;
+            grid-row:2
+        } 
+        .six{
+            border:1px solid black;
+            background-color:dodgerblue;
+            grid-column: 3;
+            grid-row:2
+        } 
+        .seven{
+            border:1px solid black;
+            background-color:whitesmoke;
+            grid-column: 1;
+            grid-row:3
+        } 
+        .eight{
+            border:1px solid black;
+            background-color:dodgerblue;
+            grid-column: 2;
+            grid-row:3
+        } 
+        .nine{
+            border:1px solid black;
+            background-color:whitesmoke;
+            grid-column: 3;
+            grid-row:3
+        } 
+        .ten{
+            border:1px solid black;
+            background-color:dodgerblue;
+            grid-column: 1;
+            grid-row:4
+        } 
+        .eleven{
+            border:1px solid black;
+            background-color:whitesmoke;
+            grid-column: 2;
+            grid-row:4
+        } 
+        .twelve{
+            border:1px solid black;
+            background-color:dodgerblue;
+            grid-column: 3;
+            grid-row:4
+        } 
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="one">One</div>
+        <div class="two">Two</div>
+        <div class="three">Three</div>
+        <div class="four">Four</div>
+        <div class="five">Five</div>
+        <div class="six">Six</div>
+        <div class="seven">Seven</div>
+        <div class="eight">Eight</div>
+        <div class="nine">Nine</div>
+        <div class="ten">Ten</div>
+        <div class="eleven">Ten</div>
+        <div class="twelve">Ten</div>
+    </div>
+</body>
+
+</html>

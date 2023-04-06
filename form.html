@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>
+          Registration Form
+        </title>
+        <h2>Registration Form</h2>
+        <style>
+            body{
+                background-color: black;
+                color: beige;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                border-style: double;
+            }
+             p{
+                font-family: 'Courier New', Courier, monospace;
+             }
+             h2{
+                color: brown;
+             }
+          
+        </style>
+    </head>
+    <body>
+        <form>
+            <p>User Personal Information</p>
+            Enter your full name :<br> <input type="text" name="name" value=""/>
+            <br>
+            Enter you email  : <br><input type="text" name="email" value=""/>
+            <br>
+            Enter you password  : <br><input type="text" name="email" value=""/>
+            <br>
+            Confirm your password  : <br><input type="text" name="email" value=""/>
+        </form>
+        <form>
+            Select your gender : <br>
+            <input type="radio" id="male" name="Male" value="Male"/>Male<br>
+            <input type="radio" id="female" name="Male" value="Female"/>Female<br>
+            <input type="radio" id="others" name="Male" value="Others"/>Others
+            <br>
+        </form>
+        <form>
+            Department:<br>
+            <select name = "dropdown">
+                <option value="select" hidden selected></option>
+                <option value="IT" >IT</option>
+                <option value="ECE" >ECE</option>
+                <option value="MECH" >MECH</option>
+                <option value="CSE" >CSE</option>
+            </select>
+        </form>
+        <form>
+            Enter your Address:<br>
+            <textarea name = "address"></textarea>
+            <br>
+            <input type="button" name="SignUp" value="SignUp"/>
+        </form>
+        
+    </body>
+</html>
