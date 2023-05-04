@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .word {
+            color: purple;
+            font-size: 4rem;
+            transition: all 0.5s ease-in;
+            margin: 0 5px;
+            transform: translateY(3.8rem);
+            opacity: 0;
+        }
+
+        .animate {
+            opacity: 0.6;
+            transform: translateY();
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="word">Hiiiiii</h1>
+        <h2 class="word">Helloooo</h2>
+        <h2 class="word">Maheee Giviii!!!!!</h2>
+    </div>
+</body>
+<script>
+    let words = document.querySelectorAll(".word");
+    const animateAll = (animate) => {
+        setTimeout(() => {
+            animate(words[0]);
+            setTimeout(() => {
+                animate(words[1]);
+                setTimeout(() => {
+                    animate(words[2]);
+                }, 1000)
+            }, 1000)
+        }, 1000)
+    };
+
+    const animate = (word) => {
+        word.classList.add("animate");
+    };
+
+    animateAll(animate);
+</script>
+
+</html>

@@ -1,0 +1,113 @@
+body{
+    background-color:rgb(100, 18, 151);
+    margin:0
+    
+}
+
+.title{
+    text-align: center;
+    color: brown;
+}
+
+
+.card{
+    list-style: none;
+    padding: 60px;
+    background-color:white;
+    display: grid;
+}
+
+.card-title{
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: normal;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.card-content{
+    font-weight: normal;
+    font-size: 32px;
+    color: #9d3131;
+    margin-top: 5px;
+}
+
+.card-image{
+    height: 350px;
+    margin:0;
+}
+
+#pokedex{
+padding-inline-start: 0;
+display:grid;
+grid-template-columns: repeat(5,1fr);
+gap: 10px;
+grid-auto-rows: minmax(100px,auto);  
+}
+
+.container {
+    padding: 40px;
+    margin: 0 auto;
+}
+
+.pagination {
+    text-align: center;
+}
+
+#prevBtn {
+    padding: 20px;
+    width : 100px;
+    font-size: 20px;
+    color: #9d3131;
+    background-color: black;
+}
+
+#nextBtn {
+    padding: 20px;
+    width : 100px;
+    font-size: 20px;
+    color: #9d3131;
+    background-color: black;
+
+}
+
+.pokeinfo {
+    position: fixed;
+    top:0;
+    left:0;
+    height:100vh;
+    width:100vw;
+    background: #f4f4f4;
+    opacity: 0.95;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 20px;
+}
+
+.car{
+    width:50%;
+}
+
+#closeBtn {
+    position:absolute;
+    top:20px;
+    right:20px;
+    width:120px;
+    font-size: 32px;
+}
+
+button{
+    background-color: purple;
+    padding: 10px 20px;
+    border:none;
+    color: white;
+    border-radius: 3px;
+    transition: transform 100ms;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: translateY(-1px);
+    box-shadow: 0px 1px 2px;   
+}

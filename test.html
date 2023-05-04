@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //qn 1
+//         const tempA = { key: { x: 1, y: 2 }};
+
+// const { x: temp1, y: temp2 } = tempA.key;
+
+// console.log(temp1, temp2);
+
+//qn2
+// var data = {
+// name : "Person 1",
+// name : “Person 2”
+// }
+// console.log(data.name);
+
+//qn 3
+
+// class MyClass {
+
+// constructor(num1, num2) {
+
+//   this.num1 = num1;
+
+//   this.num2 = num2;
+
+// }
+
+// getSum() {
+
+//   return this.num1 + this.num2;
+
+// }
+
+// }
+
+// let obj1 = new MyClass(1, 2);
+
+// let obj2 = new MyClass(10, 20);
+
+// obj1 = obj2;
+
+// obj2 = new MyClass(5, 6);
+
+// console.log(obj1.getSum(), obj2.getSum());
+
+//qn 4
+
+// class MyClass{
+
+// constructor(name){
+
+//     name = name;
+
+// }
+
+// }
+
+// let classObject = new MyClass("Guvi");
+
+// console.log(classObject.name);
+
+//qn 5
+// var tempA = 1;
+
+// function guvi(){
+
+//    var tempA = 2
+
+//    function guvi1(){
+
+//        tempA++;
+
+//        var tempA = 3;
+
+//        console.log(tempA)
+
+//    }
+
+//    guvi1();
+
+// }
+
+// guvi();
+
+//qn 6
+
+// console.log('3' + 4 + 5);
+
+//Qn 7
+// class MyClass{
+
+// constructor(name="Guvi"){
+
+//     this.name = name;
+
+// }
+
+// getName(){
+
+//     return name;
+
+// }
+
+// }
+
+// let classObject = new MyClass();
+
+// console.log(classObject.getName());
+
+//qn8
+// var sum=(...val)=>{
+
+// let result=0;
+
+// for(let i in val){
+
+// if(i<2){ result+=val[i];}
+
+// else{result-=val[i];}
+
+// }
+
+// console.log(result);
+
+// }
+
+// sum("2","2","2","2");
+
+//qn 9
+
+// let findMatch=value1=>{
+
+// return value2=>{
+
+//      if(value1==value2){
+
+//          return x=> console.log(`${x}: ${value1} and ${value2} matches`);
+
+//      }else{
+
+//          return x=>console.log(`${x} does not match`);
+
+//      }
+
+// }
+
+// }
+
+// let foo=findMatch("hello");
+
+// let display=findMatch("hello")("hello");
+
+// foo("hello");
+
+// display("End");
+
+//qn 10
+
+// class MyClass {
+
+// constructor(num1, num2) {
+
+//   this.num1 = num1;
+
+//   this.num2 = num2;
+
+// }
+
+// getNum1(){
+
+//     return this.num1;
+
+// }
+
+// getNum2(){
+
+//     return this.num2;
+
+// }
+
+// getSum() {
+
+//   return getNum1() + getNum2();
+
+// }
+
+// }
+
+// let obj1 = new MyClass(1, 2);
+
+// console.log(obj1.getSum());
+
+//qn 11
+
+var n=4;
+
+console.log(n+1+'3');
+
+//qn 12
+
+// var data = {
+// name : "Person 1",
+// address : {
+// type : ["Home","Office"]
+// }
+
+// }
+
+// console.log(ddata[‘address’][‘type’][0];)
+
+//qn 13
+
+var a = ["a","b","c"];
+a[4] = "e";
+console.log(a)
+
+//qn 14
+
+// var guvi = new geek();
+
+// guvi.a = 10;
+
+// guvi.b = 10;
+
+// console.log(guvi);
+
+// var geek = class geek {
+
+//   constructor(a, b) {
+
+//     this.a = a;
+
+//     this.b = b;
+
+//   }
+
+// };
+
+//Qn 15
+
+var geek = class geek {
+
+constructor(a, b) {
+
+  this.a = a;
+
+  this.b = b;
+
+}
+
+};
+
+var guvi = new geek();
+
+guvi.a = 10;
+
+guvi.b = 10;
+
+console.log(guvi);
+
+//qn 16
+
+var guvi=2;
+
+function guvi(num) {
+
+ return (num*2);
+
+}
+
+console.log(typeof guvi);
+</script>
+</body>
+</html>
