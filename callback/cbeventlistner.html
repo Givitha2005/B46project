@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>School time</h1>
+    <button id = "btnName">Bell</button>
+    <p id = "bellaction"></p>
+</body>
+<script>
+    const element = document.getElementById("btnName");
+    element.addEventListener("click",clickFunction);
+    element.addEventListener("mouseover",overFunctiion);
+    element.addEventListener("mouseout",outFunctiion);
+
+function clickFunction(){
+    document.getElementById("bellaction").innerHTML += "Clicked!!!!!<br>"
+}
+
+function overFunctiion(){
+    document.getElementById("bellaction").innerHTML += "Mouse Over!!!!!<br>"
+}
+
+function outFunctiion(){
+    document.getElementById("bellaction").innerHTML += "Mouse Out!!!!!<br>"
+}
+</script>
+</html>

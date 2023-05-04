@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>First Web page</title> -->
+</head>
+<body>
+    <h1>The Document Object Model</h1>
+    <h2>The createElement() method</h2>
+    <p>Write here</p>
+    <script>
+        const para = document.createElement("p");
+        para.innerText="This is a paragraph";
+        document.body.appendChild(para);
+
+        const head = document.createElement("h1");
+        head.innerText="Welocme!!!!!!!!!!!!!!!!!!";
+        document.body.appendChild(head);
+
+        const title = document.createElement("title");
+        title.innerText="Heloooooooooooo";
+        document.body.appendChild(title);
+
+        const div = document.createElement("div");
+        div.innerText="Today is a weekday";
+        document.body.appendChild(div);
+    </script>
+</body>
+</html>
