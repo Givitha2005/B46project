@@ -3,12 +3,12 @@
 const pokedex = document.getElementById("pokedex");
 console.log(pokedex);
 
-let itemsPerPage = 10;
+let itemsPerPage = 50;
 let currentPage = 1;
 
 const fetchPokeman = async () => {
   try {
-    const url = `https://pokeapi.co/api/v2/pokemon?limit=50`;
+    const url = `https://pokeapi.co/api/v2/pokemon?limit=1000`;
     const res = await fetch(url);
     const data = await res.json();
     const pokeman = data.results.map((result, index) =>
@@ -53,10 +53,15 @@ fetchPokeman();
 
 const selectPokeman = async (id) => {
   // console.log(id);
-  const url = `https://pokeapi.co/api/v2/pokemon/${id}`;
-  const res = await fetch(url);
-  const pokeman = await res.json();
-  displayInfo(pokeman);
+  try{
+    const url = `https://pokeapi.co/api/v2/pokemon/${id}`;
+    const res = await fetch(url);
+    const pokeman = await res.json();
+    displayInfo(pokeman);
+  } catch(err){
+    console.log("Error Occured: " + err);
+  }
+
 }
 
 const displayInfo = (pokeman) => {
